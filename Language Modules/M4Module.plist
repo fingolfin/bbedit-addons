@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>M4 Macro File</string>
+	<key>BBLMLanguageCode</key>
+	<string>M4</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<true/>
+	<key>BBLMScansFunctions</key>
+	<false/>
+	<key>BBLMFileNamesToMatch</key>
+	<array>
+		<string>configure.in</string>
+		<string>configure.ac</string>
+	</array>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.m4</string>
+		</dict>
+	</array>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>else</string>
+		<string>fi</string>
+		<string>if</string>
+		<string>then</string>
+	</array>
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>AC_ARG_ENABLE</string>
+		<string>AC_ARG_WITH</string>
+		<string>AC_CANONICAL_BUILD</string>
+		<string>AC_CANONICAL_HOST</string>
+		<string>AC_CANONICAL_TARGET</string>
+		<string>AC_CHECK_FUNCS</string>
+		<string>AC_CHECK_HEADER</string>
+		<string>AC_CHECK_HEADERS</string>
+		<string>AC_CHECK_LIB</string>
+		<string>AC_CHECK_SIZEOF</string>
+		<string>AC_CONFIG_AUX_DIR</string>
+		<string>AC_CONFIG_FILES</string>
+		<string>AC_CONFIG_HEADER</string>
+		<string>AC_CONFIG_HEADERS</string>
+		<string>AC_CONFIG_SRCDIR</string>
+		<string>AC_DEFINE_UNQUOTED</string>
+		<string>AC_DEFINE</string>
+		<string>AC_EXEEXT</string>
+		<string>AC_FUNC_MALLOC</string>
+		<string>AC_FUNC_REALLOC</string>
+		<string>AC_INIT</string>
+		<string>AC_LANG</string>
+		<string>AC_LANG_C</string>
+		<string>AC_LINK_IFELSE</string>
+		<string>AC_MSG_CHECKING</string>
+		<string>AC_MSG_ERROR</string>
+		<string>AC_MSG_RESULT</string>
+		<string>AC_OUTPUT</string>
+		<string>AC_PREREQ</string>
+		<string>AC_PROG_AWK</string>
+		<string>AC_PROG_CC</string>
+		<string>AC_PROG_CPP</string>
+		<string>AC_PROG_CXX</string>
+		<string>AC_PROG_INSTALL</string>
+		<string>AC_PROG_LEX</string>
+		<string>AC_PROG_MAKE_SET</string>
+		<string>AC_SUBST</string>
+		<string>AC_TYPE_LONG_LONG_INT</string>
+		<string>AC_TYPE_UNSIGNED_LONG_LONG_INT</string>
+		<string>AM_CONDITIONAL</string>
+		<string>AS_HELP_STRING</string>
+		<string>AS_IF</string>
+	</array>
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Character Class</key>
+		<string>[:alnum:]_\.\-</string>
+		<key>Comment Pattern</key>
+		<string>(^dnl|#).*$</string>
+		<key>Open Parameter Lists</key>
+		<string>(</string>
+		<key>Close Parameter Lists</key>
+		<string>)</string>
+		<key>Open Strings 1</key>
+		<string>&apos;</string>
+		<key>Close Strings 1</key>
+		<string>&apos;</string>
+		<key>Escape Char in Strings 1</key>
+		<string></string>
+		<key>End-of-line Ends Strings 1</key>
+		<true/>
+		<key>Open Strings 2</key>
+		<string>&quot;</string>
+		<key>Close Strings 2</key>
+		<string>&quot;</string>
+		<key>Escape Char in Strings 2</key>
+		<string></string>
+		<key>End-of-line Ends Strings 2</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

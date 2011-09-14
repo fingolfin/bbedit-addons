@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+	<key>BBLMLanguageDisplayName</key>
+	<string>Fink Package File</string>
+	<key>BBLMLanguageCode</key>
+	<string>Fink</string>
+	<key>BBLMColorsSyntax</key>
+	<true/>
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+	<key>BBLMScansFunctions</key>
+	<false/>
+	<key>BBLMKeywordList</key>
+	<array>
+		<string>package</string>
+		<string>Version</string>
+		<string>revision</string>
+		<string>epoch</string>
+		<string>description</string>
+		<string>type</string>
+		<string>license</string>
+		<string>maintainer</string>
+		<string>architecture</string>
+		<string>distribution</string>
+		<string>depends</string>
+		<string>runtimedepends</string>
+		<string>builddepends</string>
+		<string>buildconflicts</string>
+		<string>provides</string>
+		<string>conflicts</string>
+		<string>replaces</string>
+		<string>recommends</string>
+		<string>suggests</string>
+		<string>enhances</string>
+		<string>pre-depends</string>
+		<string>essential</string>
+		<string>builddependsonly</string>
+		<string>addshlibdeps</string>
+		<string>custommirror</string>
+		<string>source</string>
+		<string>source1</string>
+		<string>source2</string>
+		<string>source3</string>
+		<string>source4</string>
+		<string>source5</string>
+		<string>source6</string>
+		<string>source7</string>
+		<string>source8</string>
+		<string>source9</string>
+		<string>sourcedirectory</string>
+		<string>nosourcedirectory</string>
+		<string>sourcerename</string>
+		<string>source1rename</string>
+		<string>source2rename</string>
+		<string>source3rename</string>
+		<string>source4rename</string>
+		<string>source5rename</string>
+		<string>source6rename</string>
+		<string>source7rename</string>
+		<string>source8rename</string>
+		<string>source9rename</string>
+		<string>source-checksum</string>
+		<string>source1-checksum</string>
+		<string>source2-checksum</string>
+		<string>source3-checksum</string>
+		<string>source4-checksum</string>
+		<string>source5-checksum</string>
+		<string>source6-checksum</string>
+		<string>source7-checksum</string>
+		<string>source8-checksum</string>
+		<string>source9-checksum</string>
+		<string>sourceextractdir</string>
+		<string>source2extractdir</string>
+		<string>source3extractdir</string>
+		<string>source4extractdir</string>
+		<string>source5extractdir</string>
+		<string>source6extractdir</string>
+		<string>source7extractdir</string>
+		<string>source8extractdir</string>
+		<string>source9extractdir</string>
+		<string>source-md5</string>
+		<string>source1-md5</string>
+		<string>source2-md5</string>
+		<string>source3-md5</string>
+		<string>source4-md5</string>
+		<string>source5-md5</string>
+		<string>source6-md5</string>
+		<string>source7-md5</string>
+		<string>source8-md5</string>
+		<string>source9-md5</string>
+		<string>tarfilesrename</string>
+		<string>tar1filesrename</string>
+		<string>tar2filesrename</string>
+		<string>tar3filesrename</string>
+		<string>tar4filesrename</string>
+		<string>tar5filesrename</string>
+		<string>tar6filesrename</string>
+		<string>tar7filesrename</string>
+		<string>tar8filesrename</string>
+		<string>tar9filesrename</string>
+		<string>updateconfigguess</string>
+		<string>updateconfigguessindirs</string>
+		<string>updatelibtool</string>
+		<string>updatelibtoolindirs</string>
+		<string>updatepomakefile</string>
+		<string>usemaxbuildjobs</string>
+		<string>patch</string>
+		<string>patchfile</string>
+		<string>patchfile-md5</string>
+		<string>patchscript</string>
+		<string>setcc</string>
+		<string>setcflags</string>
+		<string>setcpp</string>
+		<string>setcppflags</string>
+		<string>setcxx</string>
+		<string>setcxxflags</string>
+		<string>setdyld_library_path</string>
+		<string>setld_prebind</string>
+		<string>setld_prebind_allow_overlap</string>
+		<string>setld_force_no_prebind</string>
+		<string>setld_seg_addr_table</string>
+		<string>setld</string>
+		<string>setldflags</string>
+		<string>setlibrary_path</string>
+		<string>setlibs</string>
+		<string>setmacosx_deployment_target</string>
+		<string>setmake</string>
+		<string>setmflags</string>
+		<string>setmakeflags</string>
+		<string>setpath</string>
+		<string>nosetcc</string>
+		<string>nosetcflags</string>
+		<string>nosetcpp</string>
+		<string>nosetcppflags</string>
+		<string>nosetcxx</string>
+		<string>nosetcxxflags</string>
+		<string>nosetdyld_library_path</string>
+		<string>nosetld_prebind</string>
+		<string>nosetld_prebind_allow_overlap</string>
+		<string>nosetld_force_no_prebind</string>
+		<string>nosetld_seg_addr_table</string>
+		<string>nosetld</string>
+		<string>nosetldflags</string>
+		<string>nosetlibrary_path</string>
+		<string>nosetlibs</string>
+		<string>nosetmacosx_deployment_target</string>
+		<string>nosetmake</string>
+		<string>nosetmflags</string>
+		<string>nosetmakeflags</string>
+		<string>nosetpath</string>
+		<string>configureparams</string>
+		<string>gcc</string>
+		<string>compilescript</string>
+		<string>noperltests</string>
+		<string>updatepod</string>
+		<string>installscript</string>
+		<string>appbundles</string>
+		<string>jarfiles</string>
+		<string>docfiles</string>
+		<string>shlibs</string>
+		<string>runtimevars</string>
+		<string>splitoff</string>
+		<string>splitoff1</string>
+		<string>splitoff2</string>
+		<string>splitoff3</string>
+		<string>splitoff4</string>
+		<string>splitoff5</string>
+		<string>splitoff6</string>
+		<string>splitoff7</string>
+		<string>splitoff8</string>
+		<string>splitoff9</string>
+		<string>files</string>
+		<string>preinstscript</string>
+		<string>postinstscript</string>
+		<string>prermscript</string>
+		<string>postrmscript</string>
+		<string>conffiles</string>
+		<string>infodocs</string>
+		<string>daemonicfile</string>
+		<string>daemonicname</string>
+		<string>homepage</string>
+		<string>descdetail</string>
+		<string>descusage</string>
+		<string>descpackaging</string>
+		<string>descport</string>
+		<string>infotest</string>
+	</array>
+	<key>BBLMSuffixMap</key>
+	<array>
+		<dict>
+			<key>BBLMLanguageSuffix</key>
+			<string>.info</string>
+		</dict>
+	</array>
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Characters</key>
+		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_-abcdefghijklmnopqrstuvwxyz</string>
+		<key>Prefix for Functions</key>
+		<string></string>
+		<key>Prefix for Procedures</key>
+		<string></string>
+		<key>Open Parameter Lists</key>
+		<string>%lt;%lt;</string>
+		<key>Close Parameter Lists</key>
+		<string>%lt;%lt;</string>
+		<key>Terminator for Prototypes 1</key>
+		<string></string>
+		<key>Terminator for Prototypes 2</key>
+		<string></string>
+		<key>Open Statement Blocks</key>
+		<string>%lt;%lt;</string>
+		<key>Close Statement Blocks</key>
+		<string>%lt;%lt;</string>
+		<key>Open Block Comments</key>
+		<string></string>
+		<key>Close Block Comments</key>
+		<string></string>
+		<key>Open Line Comments</key>
+		<string>#</string>
+		<key>Open Strings 1</key>
+		<string>&apos;</string>
+		<key>Close Strings 1</key>
+		<string>&apos;</string>
+		<key>Escape Char in Strings 1</key>
+		<string></string>
+		<key>End-of-line Ends Strings 1</key>
+		<true/>
+		<key>Open Strings 2</key>
+		<string>&quot;</string>
+		<key>Close Strings 2</key>
+		<string>&quot;</string>
+		<key>Escape Char in Strings 2</key>
+		<string></string>
+		<key>End-of-line Ends Strings 2</key>
+		<true/>
+	</dict>
+</dict>
+</plist>
