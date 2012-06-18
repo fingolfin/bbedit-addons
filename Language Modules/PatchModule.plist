@@ -68,5 +68,7 @@
 		<key>End-of-line Ends Strings 2</key>
 		<true/>
 	</dict>
+	<key>com.barebones.DocumentType</key>
+	<string>CodelessLanguageModule</string>
 </dict>
 </plist>

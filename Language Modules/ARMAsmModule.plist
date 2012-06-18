@@ -94,5 +94,9 @@
 		<key>End-of-line Ends Strings 2</key>
 		<true/>
 	</dict>
+	<key>BBLMCommentLineDefault</key>
+	<string>@ </string>
+	<key>com.barebones.DocumentType</key>
+	<string>CodelessLanguageModule</string>
 </dict>
 </plist>
