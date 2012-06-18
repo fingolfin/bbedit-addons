@@ -68,6 +68,8 @@
 	<false/>
 	<key>Language Features</key>
 	<dict>
+		<key>Open Line Comments</key>
+		<string>#</string>
 		<key>Comment Pattern</key>
 		<string>#.*$</string>
 		<key>Function Pattern</key>
@@ -75,9 +77,9 @@
 ^[ \t]*  (Declare(Attribute|Filter|InfoClass|Operation|Property|Synonym)|
    Install(GlobalFunction|
           (True|Other|Immediate)?Method|
-          (Factor|Subset)Maintenance))\s*
-	(?# The opening parenthesis)
-	\(\s*
+          (Factor|Subset)Maintenance)|BindGlobal|BIND_GLOBAL)\s*
+	(?# The opening parenthesis, possibly followed by spaces and quotation mark)
+	\(\s*"?
 	(?# Match the function name. Also handles \* etc. )
 	(?P&lt;function_name&gt;(?:[a-zA-Z_]|\\\S)(?:[a-zA-Z0-9_]|\\\S)*)
 </string>
@@ -89,5 +91,9 @@
 			(?&gt;	&apos;	(?s: \\. | [^&apos;] )*?		(?: &apos; | $)	)
 		)</string>
 	</dict>
+	<key>BBLMCommentLineDefault</key>
+	<string># </string>
+	<key>com.barebones.DocumentType</key>
+	<string>CodelessLanguageModule</string>
 </dict>
 </plist>
