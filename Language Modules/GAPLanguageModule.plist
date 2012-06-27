@@ -25,9 +25,11 @@
 		<string>if</string>
 		<string>in</string>
 		<string>local</string>
+		<string>mod</string>
 		<string>not</string>
 		<string>od</string>
 		<string>or</string>
+		<string>rec</string>
 		<string>repeat</string>
 		<string>return</string>
 		<string>then</string>
@@ -73,16 +75,19 @@
 		<key>Comment Pattern</key>
 		<string>#.*$</string>
 		<key>Function Pattern</key>
-		<string>(?sx)
-^[ \t]*  (Declare(Attribute|Filter|InfoClass|Operation|Property|Synonym)|
-   Install(GlobalFunction|
-          (True|Other|Immediate)?Method|
-          (Factor|Subset)Maintenance)|BindGlobal|BIND_GLOBAL)\s*
-	(?# The opening parenthesis, possibly followed by spaces and quotation mark)
-	\(\s*"?
-	(?# Match the function name. Also handles \* etc. )
-	(?P&lt;function_name&gt;(?:[a-zA-Z_]|\\\S)(?:[a-zA-Z0-9_]|\\\S)*)
-</string>
+		<string><![CDATA[(?sx)
+			(?# Some leading whitespace)
+			^[ \t]*
+			(?# The command declaring/installing the function / variable)
+			(
+			   (Declare|Install)([A-Z][A-Za-z]+)|
+			   BindGlobal|BIND_GLOBAL
+			)
+			(?# The opening parenthesis, possibly surrounded by whitespace and followed by quotation mark)
+			\s*\(\s*"?
+			(?# Match the function name. Also handles \* etc. )
+			(?P<function_name>(?:[a-zA-Z_]|\\\S)(?:[a-zA-Z0-9_]|\\\S)*)
+		]]></string>
 		<key>Identifier and Keyword Character Class</key>
 		<string>[:alnum:]_</string>
 		<key>String Pattern</key>
