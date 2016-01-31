@@ -91,10 +91,12 @@
 		<key>Identifier and Keyword Character Class</key>
 		<string>[:alnum:]_</string>
 		<key>String Pattern</key>
-		<string>(?x:
-			(?&gt;	&quot;	(?s: \\. | [^&quot;] )*?		(?: &quot; | $)	)	|
-			(?&gt;	&apos;	(?s: \\. | [^&apos;] )*?		(?: &apos; | $)	)
-		)</string>
+		<string><![CDATA[(?x:
+                ("""(?:\n|.)*?""")     | (?# Triple-double-quote)
+                ("(\\"|[^"\r]|\\\r)*") | (?# Double-quote)
+                ('(\\'|[^'\r]|\\\r)*')   (?# Single-quote)
+            )
+		]]></string>
 	</dict>
 	<key>BBLMCommentLineDefault</key>
 	<string># </string>
