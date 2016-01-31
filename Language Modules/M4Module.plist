@@ -13,7 +13,7 @@
 	<key>BBLMIsCaseSensitive</key>
 	<true/>
 	<key>BBLMScansFunctions</key>
-	<false/>
+	<true/>
 	<key>BBLMFileNamesToMatch</key>
 	<array>
 		<string>configure.in</string>
@@ -571,21 +571,35 @@
 		<key>Close Parameter Lists</key>
 		<string>)</string>
 		<key>Open Strings 1</key>
-		<string>&apos;</string>
+		<string>"</string>
 		<key>Close Strings 1</key>
-		<string>&apos;</string>
+		<string>"</string>
 		<key>Escape Char in Strings 1</key>
-		<string></string>
+		<string>\</string>
 		<key>End-of-line Ends Strings 1</key>
-		<true/>
+		<false/>
 		<key>Open Strings 2</key>
-		<string>&quot;</string>
+		<string>'</string>
 		<key>Close Strings 2</key>
-		<string>&quot;</string>
+		<string>'</string>
 		<key>Escape Char in Strings 2</key>
-		<string></string>
+		<string>\</string>
 		<key>End-of-line Ends Strings 2</key>
-		<true/>
+		<false/>
+		<key>Function Pattern</key>
+		<string><![CDATA[(?sx)
+			(?# Some leading whitespace)
+			^[ \t]*
+			(?# The command declaring the function / variable)
+			(
+			   m4_define|A[CU]_DEFUN|AU_ALIAS
+			)
+			(?# The opening parenthesis, possibly surrounded by whitespace, and followed by a bracket)
+			\s*\(\s*\[
+			(?# Match the function name )
+			(?P<function_name>(?:[a-zA-Z_]|\\\S)(?:[a-zA-Z0-9_()]|\\\S)*)
+			\]
+		]]></string>
 	</dict>
 	<key>BBLMCommentLineDefault</key>
 	<string># </string>
